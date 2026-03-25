@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    /* Fullscreen background image */
+    body {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Transparent card */
+    .card {
+      background-color: rgba(255, 255, 255, 0.85); /* White with 85% opacity */
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card mt-5 shadow">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Login</h3>
+            
+            <!-- Login Form -->
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+              </div>
+              
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+
+            <p class="text-center mt-3">
+              <a href="#">Forgot password?</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
